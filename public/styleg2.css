@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(203, 108, 108);
+}
+#canvas1{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+    max-width: 100%;
+    max-height: 100%;
+    /* this is important in the visualization in other devices */
+}
+#playerImage,#backgroundImage,#enemyImage{
+    display: none;
+}
+#fullscreenButton{
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}

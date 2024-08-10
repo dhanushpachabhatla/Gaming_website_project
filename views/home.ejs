@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="/homestyle.css">
+</head>
+<body>
+    <nav class="navigation">
+        <img src="/websitelogo.png" alt="">
+        <h2>2D FOR YOU</h1>
+            <!-- <h1 style="text-align: center;">welcome to 2Dforyou</h1> -->
+        <h1 style="text-align: center;">welcome <%= username %></h1>
+    </nav>
+    
+    <div class="intro">
+        PLAY SOME INTERESTING GAMES HERE
+        <img src="/handdown.png" alt="">
+    </div>
+    
+    <div class="container">
+
+        <div class="box" id="game1">
+            <div class="vid">
+                <video autoplay loop muted plays-inline class="back-video1" >
+                    <source src="/GAME1.mp4">
+                </video>
+            </div>
+            <button class="button" id="g1" >PLAY NOW</button>
+            <div class="matter">Save your village from creepy monsters which are sealed by gods very long ago but now they revived by evil genocides humans so now they are on the way to take revenge on the world, KILL THEM ALL OTHERWISE YOU WILL FACE THE CONSEQENCES  </div>
+        </div>
+        <div class="box" id="game2">
+            <div class="vid">
+                <video autoplay loop muted plays-inline class="back-video2" >
+                    <source src="/GAME2.mp4">
+                </video>
+            </div>
+            <button class="button" id="g2" >PLAY NOW</button>
+            <div class="matter">Escape the evil plants which are mutated by aliens, you are dog now, save your life and try to be alive untill you see your master who is also trying to reach you </div>
+        </div>
+        <div class="box" id="game3">
+            <div class="vid">
+                <video autoplay loop muted plays-inline class="back-video3" >
+                    <source src="/GAME3.mp4">
+                </video>
+            </div>
+            <button class="button" id="g3" >PLAY NOW</button>
+            <div class="matter">This is the toughest game in this wesite, You are an angry flappy bird now, avoid the contact with the building blocks and try to be alive, if you score than 10 points you are consider to be a genious genious</div>
+        </div>
+    </div>
+<!-- </div> -->
+    <div class="info">
+        <ul>
+        <br>
+        <li>final CHALLENGE : score 10 points in flappy bird game.</li>
+        <br>
+        <li>This is a gaming website where a user can play multiple games of different genres.</li>
+        <br>
+        <li>This is for people who love to play 2D games.</li>
+        <br>
+        <li>In india, the game development is very underrated but soon it might be one of the biggests markets, this page is to inspire the people and support us if you like our games soon we will come with new games which  are more excitingg to play, dont forget to leave a review by contacting us in other social media platforms, your review and feedback matters. </li>
+        <br>
+        <li>Both website and games are developed by a student, just like you. contact us if you wanna learn web development and game 2D development.</li>
+        <br>
+        <li>This games are still in devolopment and the new updates and animations will come soon.</li>
+        <br>
+        <li>Contact us for any queries / doubts / review / suggestion and THANKS FOR VISITING!! </li>
+        <br>
+        <li>STAY TUNED, IT IS JUST GETTING STARTED</li>
+        </ul>
+    </div>
+    <div class="contact">
+        <h1 id="ctd">CONTACT THE DEVELOPER</h1>
+        <!-- <label for="insta"><a href="instagram.com"></a></label> -->
+        <a href="https://www.instagram.com/kaleidokaii/" target="_blank"><img class="image" id="insta" src="/instalogo.png" alt=""></a>
+        <a href="https://twitter.com/kylobun" target="_blank"><img class="image" id="twitter" src="/twitter.png" alt=""></a>
+        <a href="https://mail.google.com/mail/u/0/#search/cs23b1053%40iiitr.ac.in?compose=new" target="_blank"><img class="image" id="gmail" src="/gmail.png" alt=""></a>
+        
+    </div>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.2Dforyou.com. All rights reserve 
+        </div>
+    </footer>
+</div>
+<script>
+    document.getElementById("g1").addEventListener("click", function() {
+        window.location.href = "/g1";
+    });
+    document.getElementById("g2").addEventListener("click", function() {
+        window.location.href = "/g2";
+    });
+    document.getElementById("g3").addEventListener("click", function() {
+        window.location.href = "/g3";
+    });
+</script>
+</body>
+</html>
