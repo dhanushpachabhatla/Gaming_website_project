@@ -5,17 +5,20 @@ const collection = require("./config");
 const bcrypt = require('bcrypt'); //library used for hashing passwords
 
 const app = express();//creating a express application
+app.use(express.static(path.join(__dirname, '../public')));
 // convert data into json format
 app.use(express.json()); //configures Express.js to parse incoming request bodies with JSON payloads
 app.use(express.static("public"));//applications can use the static files which are in the public folder
 
 app.use(express.urlencoded({ extended: false }));
 //use EJS as the view engine 
+app.use(express.static(path.join(__dirname, '../public')));
 app.set("view engine", "ejs");
 //EJS enables server-side rendering by allowing you to generate HTML content on the server before sending it to the client, which can improve page load times and make your content more accessible to search engines.  for complex web applications with dynamic features and data-driven content, HTML alone may be insufficient.
 app.get("/", (req, res) => {
     res.render("login");
 });
+
 
 app.get("/signup", (req, res) => {
     res.render("signup");
@@ -41,7 +44,7 @@ app.post("/signup", async (req, res) => {
     // Check if the username already exists in the database
     const existingUser = await collection.findOne({ name: data.name });
     
-    if (existingUser) {
+    if (existingUser){
         res.send('User already exists. Please choose a different username.');
     } else {
         // Hash the password using bcrypt

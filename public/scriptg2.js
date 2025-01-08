@@ -111,8 +111,7 @@ window.addEventListener('load',function(){ //load event waits for all assets suc
             }
             else if(((input.keys.indexOf('ArrowUp')>-1||input.keys.indexOf('swipe up')>-1 ) && this.onGround() ) ){
                 // this.vy=-10;
-                this.vy=-24;
-
+                this.vy= -24;
             }
             else {
                 this.speed=0;//it stops if you dont press anything
